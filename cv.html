@@ -8,7 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="vendor/jquery.js"></script>
     <script src="vendor/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="vendor/responsive-bootstrap-carousel-multiple-items/carousel.js"></script>
     <title>CV</title>
 </head>
 <body>
@@ -45,32 +47,116 @@
         </div>
     </div>
     <div id="tekstblok">
-        <img src="img/gezicht.jpg" alt="Foto van Iljas" id="fotoIljas">
-            <p id="tekstNaastFoto">
-                Iljas is geboren op 15 oktober 2001 te Turnhout.<br>
-                Hij is een Belg, is ongehuwd,<br>
-                en bezit een rijbewijs B.<br>
-                Hij zou het best kunnen beschreven worden als stressbestendig, leergierig en betrouwbaar.<br><br>
-            </p>
-            <table>
-                <caption align="bottom">Talenkennis van Iljas</caption>
-                <tr>
-                    <th>Taal</th>
-                    <th>Kennis</th>
-                </tr>
-                <tr>
-                    <td>Nederlands</td>
-                    <td>Moedertaal</td>
-                </tr>
-                <tr>
-                    <td>Engels</td>
-                    <td>Zeer sterk</td>
-                </tr>
-                <tr>
-                    <td>Frans</td>
-                    <td>Beperkte kennis</td>
-                </tr>
-            </table>
+        <div class="container px-4 py-5" id="icon-grid">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Middelbaar</h3>
+                  <p>Handelsschool in Turnhout</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Hoge school</h3>
+                  <p>Thomas More Geel</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Stage</h3>
+                  <p>Chameleon Geel</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Vakantiewerk</h3>
+                  <p>Hypermarket Carrefour Turnhout</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Vakantiewerk</h3>
+                  <p>Jeugdinstelling De Hutten Mol</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Werk</h3>
+                  <p>Spar Lichtaart</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Nederlands</h3>
+                  <p>Moedertaal</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Engels</h3>
+                  <p>Zeer goede kennis</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Frans</h3>
+                  <p>Matige kennis</p>
+                </div>
+              </div>
+            </div>
+      </div>
+      <!-- Carousel -->
+      <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner w-100" role="listbox">
+        <div class="carousel-item active">
+        <div class="col-lg-4 col-md-6">
+        <img class="img-fluid" src="img/werken.jpg">
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="col-lg-4 col-md-6">
+          <img class="img-fluid" src="img/techsupport.jpg">
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="col-lg-4 col-md-6">
+          <img class="img-fluid" src="img/gezicht.jpg">
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="col-lg-4 col-md-6">
+          <img class="img-fluid" src="img/gezicht.jpg">
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="col-lg-4 col-md-6">
+          <img class="img-fluid" src="img/gezicht.jpg">
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="col-lg-4 col-md-6">
+          <img class="img-fluid" src="img/gezicht.jpg">
+        </div>
+        </div>
+        </div>
+        <a class="carousel-control-prev bg-dark w-auto" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next bg-dark w-auto" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+        </div>
     </div>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
