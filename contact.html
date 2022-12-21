@@ -54,11 +54,29 @@
             of via onderstaand formulier<br>
         </p>
         <form method="get" action="https://www.w3schools.com/action_page.php">
-            <input type="text" placeholder="Uw naam" name="naam"><br>
-            <input type="text" placeholder="Uw mailadres" name="email"><br>
-            <input type="text" placeholder="Onderwerp" name="onderwerp"><br>
-            <textarea name="bericht" cols="100" placeholder="Uw bericht" rows="4"></textarea><br>
-            <input type="submit" id="submit" value="Verzend ➤">
+            <div class="form-group">
+                <label for="name">Naam</label>
+                <input type="text" class="form-control" id="name" placeholder="Naam" required>
+             </div>
+              <div class="form-group">
+               <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="email" required>
+            </div>
+             <div class="form-group">
+              <label for="skills">Intresse in skills</label>
+              <select class="form-control" id="skills">
+               <option>Software development</option>
+               <option>Web development</option>
+                  <option>Netwerken</option>
+                  <option>Hardware</option>
+               <option>AI</option>
+                </select>
+             </div>
+             <div class="form-group">
+              <label for="question">Vraag</label>
+              <textarea class="form-control" id="question" rows="3"></textarea>
+             </div>
+            <button type="submit" class="btn btn-primary">Verzend ➤</button>
         </form>
     </div>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

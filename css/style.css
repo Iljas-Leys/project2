@@ -272,3 +272,7 @@ td{
     .carousel-inner .carousel-item-left {
     transform: translateX(0);
     }
+    form{
+        width: 50%;
+        margin: auto;
+    }
