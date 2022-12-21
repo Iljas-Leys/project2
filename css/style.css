@@ -54,6 +54,7 @@ li a:hover{
     height: 700px;
     position: relative;
     overflow: hidden;
+    padding-top: 200px;
 }
 #titelTekst{
     position: absolute;
